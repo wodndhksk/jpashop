@@ -109,4 +109,18 @@ public class OrderRepository {
         ).getResultList();
     }
 
+    /**
+     * 쿼리에서 distinct 애플리케이션 엔티티에서 distinct 한번 더 한다.
+     * (쿼리 distinct 는 값이 전부 같아야 중복 제거가 되지만 애플리케이션에서는 Order 객체의 id 값으로 중복 제거가 가능)
+     */
+    public List<Order> findAllWithItem() {
+        return em.createQuery(
+                "select distinct o from Order o " +
+                        " join fetch o.member m  " +
+                        " join fetch o.delivery d" +
+                        " join fetch o.orderItems oi" +
+                        " join fetch oi.item i", Order.class)
+        .getResultList();
+    }
+
 }
