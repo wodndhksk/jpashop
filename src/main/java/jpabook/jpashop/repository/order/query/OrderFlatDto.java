@@ -14,7 +14,6 @@ public class OrderFlatDto {
     private LocalDateTime orderDate;
     private OrderStatus orderStatus;
     private Address address;
-    private List<OrderItemQueryDto> orderItems;
     private String itemName;
     private int orderPrice;
     private int count;
