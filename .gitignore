@@ -35,3 +35,15 @@ out/
 
 ### VS Code ###
 .vscode/
+!/build/
+/src/main/generated/jpabook/jpashop/domain/item/QAlbum.java
+/src/main/generated/jpabook/jpashop/domain/item/QBook.java
+/src/main/generated/jpabook/jpashop/domain/item/QItem.java
+/src/main/generated/jpabook/jpashop/domain/item/QMovie.java
+/src/main/generated/jpabook/jpashop/domain/QAddress.java
+/src/main/generated/jpabook/jpashop/domain/QCategory.java
+/src/main/generated/jpabook/jpashop/domain/QDelivery.java
+/src/main/generated/jpabook/jpashop/domain/QMember.java
+/src/main/generated/jpabook/jpashop/domain/QOrder.java
+/src/main/generated/jpabook/jpashop/domain/QOrderItem.java
+/build/**
